@@ -41,4 +41,4 @@ web/.gitattributes
 web/.eslintrc.json
 web/.ht.router.php
 
-
+web/modules/*

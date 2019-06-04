@@ -1,18 +1,16 @@
 {
     "name": "sujithsuresan/web",
-    "description": "drupal hrms project",
-    "authors": [
-        {
-            "name": "sujith suresan",
-            "email": "sujith7c@gmail.com"
-        }
-    ],
     "require": {
         "drupal-composer/drupal-scaffold": "^2.6",
         "composer/installers": "^1.6",
-        "drupal/core": "^8.7"
+        "drupal/workflow": "^1.1"
     },
-
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
     "extra": {
         "installer-paths": {
             "core": ["type:drupal-core"],
