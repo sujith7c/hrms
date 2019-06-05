@@ -1,0 +1,30 @@
+uuid: 52fe5528-8adc-4ea6-ad6a-ec3d84650c41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_tax_grade
+    - taxonomy.vocabulary.field_tax_career_grade
+  module:
+    - user
+id: user.user.field_user_tax_grade
+field_name: field_user_tax_grade
+entity_type: user
+bundle: user
+label: Grade
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      field_tax_career_grade: field_tax_career_grade
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

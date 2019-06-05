@@ -1,0 +1,8 @@
+uuid: c0542c02-37a2-40b0-9c0e-382ef13bd737
+langcode: en
+status: true
+dependencies: {  }
+name: 'Career Grade'
+vid: field_tax_career_grade
+description: 'Career Grade'
+weight: 0

@@ -1,0 +1,21 @@
+uuid: 57886839-0aae-43f3-89b9-f1354e3c4fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_field_date_of_join
+  module:
+    - datetime
+    - user
+id: user.user.field_user_field_date_of_join
+field_name: field_user_field_date_of_join
+entity_type: user
+bundle: user
+label: 'Date of Join'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

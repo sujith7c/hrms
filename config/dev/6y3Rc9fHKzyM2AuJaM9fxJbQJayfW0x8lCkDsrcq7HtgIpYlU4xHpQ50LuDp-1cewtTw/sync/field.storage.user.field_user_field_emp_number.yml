@@ -1,0 +1,20 @@
+uuid: 0b4ad38c-4c67-4fed-a24d-773eafef7bf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_user_field_emp_number
+field_name: field_user_field_emp_number
+entity_type: user
+type: decimal
+settings:
+  precision: 10
+  scale: 0
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

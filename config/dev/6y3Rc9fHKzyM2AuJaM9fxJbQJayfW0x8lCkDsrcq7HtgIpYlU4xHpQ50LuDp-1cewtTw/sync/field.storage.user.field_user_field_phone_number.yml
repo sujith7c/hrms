@@ -1,0 +1,20 @@
+uuid: 67424dbc-d62e-46f4-8b36-e1c05ce819ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_user_field_phone_number
+field_name: field_user_field_phone_number
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

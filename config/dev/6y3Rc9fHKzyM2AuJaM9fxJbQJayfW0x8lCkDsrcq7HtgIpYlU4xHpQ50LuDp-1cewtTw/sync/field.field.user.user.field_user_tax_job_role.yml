@@ -1,0 +1,30 @@
+uuid: 71bf5b95-3346-472c-98d6-fd54f05a545e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_tax_job_role
+    - taxonomy.vocabulary.field_tax_designation
+  module:
+    - user
+id: user.user.field_user_tax_job_role
+field_name: field_user_tax_job_role
+entity_type: user
+bundle: user
+label: 'Job Role'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      field_tax_designation: field_tax_designation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

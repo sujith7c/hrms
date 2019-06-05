@@ -1,0 +1,29 @@
+uuid: 50ea0e50-4f2d-4c0b-b6b3-d3286f304e47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_ref_line_manager
+  module:
+    - user
+id: user.user.field_user_ref_line_manager
+field_name: field_user_ref_line_manager
+entity_type: user
+bundle: user
+label: 'Line Manager'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
