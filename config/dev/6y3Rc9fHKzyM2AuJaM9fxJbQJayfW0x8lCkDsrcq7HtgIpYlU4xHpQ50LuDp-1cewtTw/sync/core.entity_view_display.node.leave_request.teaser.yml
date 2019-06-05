@@ -1,0 +1,20 @@
+uuid: a850d5ea-9503-4df9-bd74-daedcae0e6ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.leave_request
+  module:
+    - user
+id: node.leave_request.teaser
+targetEntityType: node
+bundle: leave_request
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

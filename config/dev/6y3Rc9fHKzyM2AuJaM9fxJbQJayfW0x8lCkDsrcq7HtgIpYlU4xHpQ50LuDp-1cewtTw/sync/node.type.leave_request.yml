@@ -1,0 +1,17 @@
+uuid: 17065a7f-f703-4839-ae2d-997889a4ff62
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Leave Request'
+type: leave_request
+description: 'Employee Leave Request'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

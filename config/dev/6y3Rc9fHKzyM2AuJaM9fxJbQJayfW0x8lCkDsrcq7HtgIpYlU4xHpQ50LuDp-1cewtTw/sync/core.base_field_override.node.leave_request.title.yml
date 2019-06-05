@@ -1,0 +1,18 @@
+uuid: 74393430-42b4-4640-842a-bc9e31b4fcbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leave_request
+id: node.leave_request.title
+field_name: title
+entity_type: node
+bundle: leave_request
+label: 'Leave Request'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

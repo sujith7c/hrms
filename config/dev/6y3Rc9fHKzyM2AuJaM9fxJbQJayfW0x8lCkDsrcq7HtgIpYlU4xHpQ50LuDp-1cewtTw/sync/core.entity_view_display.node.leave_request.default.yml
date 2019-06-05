@@ -1,0 +1,28 @@
+uuid: 994ab615-d179-448d-a270-bb90feb75fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leave_request.field_leave_req_type_of_leave
+    - node.type.leave_request
+  module:
+    - options
+    - user
+id: node.leave_request.default
+targetEntityType: node
+bundle: leave_request
+mode: default
+content:
+  field_leave_req_type_of_leave:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

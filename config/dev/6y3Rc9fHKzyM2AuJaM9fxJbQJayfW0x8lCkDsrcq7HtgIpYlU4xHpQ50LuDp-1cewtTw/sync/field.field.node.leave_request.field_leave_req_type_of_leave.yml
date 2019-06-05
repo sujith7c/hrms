@@ -1,0 +1,21 @@
+uuid: 5179d4be-4f19-4128-8b75-4d5d934b58a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leave_req_type_of_leave
+    - node.type.leave_request
+  module:
+    - options
+id: node.leave_request.field_leave_req_type_of_leave
+field_name: field_leave_req_type_of_leave
+entity_type: node
+bundle: leave_request
+label: 'Type Of leave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

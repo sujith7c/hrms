@@ -1,0 +1,22 @@
+uuid: 087d456c-8fbb-4b8d-9a5a-0c7886e8d288
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leave_request
+id: node.leave_request.status
+field_name: status
+entity_type: node
+bundle: leave_request
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
