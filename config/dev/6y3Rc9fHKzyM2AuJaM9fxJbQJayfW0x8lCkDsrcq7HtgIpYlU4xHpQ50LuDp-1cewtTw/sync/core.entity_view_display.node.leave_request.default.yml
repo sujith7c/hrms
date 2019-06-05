@@ -3,9 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.leave_request.field_first_date_of_leave
+    - field.field.node.leave_request.field_last_date_of_leave
+    - field.field.node.leave_request.field_leave_address_on_leave
+    - field.field.node.leave_request.field_leave_payment_opt
+    - field.field.node.leave_request.field_leave_phone_number
     - field.field.node.leave_request.field_leave_req_type_of_leave
     - node.type.leave_request
   module:
+    - datetime
     - options
     - user
 id: node.leave_request.default
@@ -13,6 +19,48 @@ targetEntityType: node
 bundle: leave_request
 mode: default
 content:
+  field_first_date_of_leave:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_last_date_of_leave:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_leave_address_on_leave:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_leave_payment_opt:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_leave_phone_number:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
   field_leave_req_type_of_leave:
     weight: 101
     label: above

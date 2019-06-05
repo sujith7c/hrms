@@ -1,0 +1,21 @@
+uuid: b82fc246-df9a-4b81-b80c-d0a438fe43e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_date_of_leave
+    - node.type.leave_request
+  module:
+    - datetime
+id: node.leave_request.field_first_date_of_leave
+field_name: field_first_date_of_leave
+entity_type: node
+bundle: leave_request
+label: 'First Date of Leave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

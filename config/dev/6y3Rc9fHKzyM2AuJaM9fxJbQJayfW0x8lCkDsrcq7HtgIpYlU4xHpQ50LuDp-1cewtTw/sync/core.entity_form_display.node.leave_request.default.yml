@@ -3,9 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.leave_request.field_first_date_of_leave
+    - field.field.node.leave_request.field_last_date_of_leave
+    - field.field.node.leave_request.field_leave_address_on_leave
+    - field.field.node.leave_request.field_leave_payment_opt
+    - field.field.node.leave_request.field_leave_phone_number
     - field.field.node.leave_request.field_leave_req_type_of_leave
     - node.type.leave_request
   module:
+    - datetime
     - path
 id: node.leave_request.default
 targetEntityType: node
@@ -18,6 +24,39 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_first_date_of_leave:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_last_date_of_leave:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_leave_address_on_leave:
+    weight: 126
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_leave_payment_opt:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_leave_phone_number:
+    weight: 125
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_leave_req_type_of_leave:
     weight: 121
     settings: {  }

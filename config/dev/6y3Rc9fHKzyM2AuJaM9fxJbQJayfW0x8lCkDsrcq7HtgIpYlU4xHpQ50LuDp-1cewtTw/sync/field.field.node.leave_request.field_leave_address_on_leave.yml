@@ -1,0 +1,19 @@
+uuid: 92bc903b-ff78-403e-a510-8741d6f2e169
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leave_address_on_leave
+    - node.type.leave_request
+id: node.leave_request.field_leave_address_on_leave
+field_name: field_leave_address_on_leave
+entity_type: node
+bundle: leave_request
+label: 'Address on Leave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

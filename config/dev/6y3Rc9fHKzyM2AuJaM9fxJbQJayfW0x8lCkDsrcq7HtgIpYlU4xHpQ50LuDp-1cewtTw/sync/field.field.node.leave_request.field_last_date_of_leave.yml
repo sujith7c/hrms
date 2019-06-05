@@ -1,0 +1,21 @@
+uuid: 88b69ccb-2ca3-4349-ab3d-6e8b9f70a5c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_date_of_leave
+    - node.type.leave_request
+  module:
+    - datetime
+id: node.leave_request.field_last_date_of_leave
+field_name: field_last_date_of_leave
+entity_type: node
+bundle: leave_request
+label: 'Last date of leave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

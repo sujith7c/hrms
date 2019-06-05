@@ -1,0 +1,23 @@
+uuid: dc54ef0b-10a0-4a72-97a2-a52ec8c16dc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leave_phone_number
+    - node.type.leave_request
+id: node.leave_request.field_leave_phone_number
+field_name: field_leave_phone_number
+entity_type: node
+bundle: leave_request
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
