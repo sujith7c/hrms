@@ -18,6 +18,7 @@ permissions:
   - 'create approved workflow_transition'
   - 'create leave_application_work_flow workflow_transition'
   - 'create leave_request content'
+  - 'create lr_workflow workflow_transition'
   - 'edit own leave_request content'
   - 'post comments'
   - 'search content'

@@ -1,4 +1,4 @@
-uuid: 4c6d8d8d-f358-4bc8-825e-a73e3dc1a406
+uuid: 09293d7c-ab00-40ff-89c2-f0c3a6cea6a2
 langcode: en
 status: true
 dependencies:
@@ -6,68 +6,66 @@ dependencies:
     - node.type.leave_request
   module:
     - content_moderation
-id: leave_application_work_flow
-label: 'Leave Application approval work flow'
+id: lr_workflow
+label: LR-WorkFlow
 type: content_moderation
 type_settings:
   states:
-    assessment:
+    approved:
       published: false
       default_revision: false
-      label: Assessment
-      weight: -2
+      label: Approved
+      weight: 4
     completed:
       published: false
       default_revision: false
       label: Completed
-      weight: 1
+      weight: 5
     draft:
       published: false
       default_revision: false
       label: Applied
-      weight: -3
+      weight: 0
     granted:
       published: false
       default_revision: false
       label: Granted
-      weight: -1
+      weight: 3
+    needs_review:
+      published: false
+      default_revision: false
+      label: 'Needs Review'
+      weight: 2
     published:
       published: true
       default_revision: true
-      label: Approved
-      weight: 0
-  transitions:
-    assessment:
-      label: Assessment
-      from:
-        - draft
-      to: assessment
-      weight: -2
-    completed:
-      label: Completed
-      from:
-        - published
-      to: completed
+      label: Published
       weight: 1
-    create_new_draft:
-      label: Applied
-      to: draft
-      weight: -3
+  transitions:
+    phase_4:
+      label: Approved->Completed
+      from:
+        - approved
+      to: completed
+      weight: 3
+    phase_one:
+      label: Applied->Review
       from:
         - draft
-    granted:
-      label: Granted
-      from:
-        - assessment
-      to: granted
-      weight: -1
-    publish:
-      label: Approved
-      to: published
+      to: needs_review
       weight: 0
+    phase_three:
+      label: Granted->Approved
       from:
-        - draft
-        - published
+        - granted
+      to: approved
+      weight: 2
+    phase_two:
+      label: Review->Granted
+      from:
+        - needs_review
+      to: granted
+      weight: 1
   entity_types:
     node:
       - leave_request

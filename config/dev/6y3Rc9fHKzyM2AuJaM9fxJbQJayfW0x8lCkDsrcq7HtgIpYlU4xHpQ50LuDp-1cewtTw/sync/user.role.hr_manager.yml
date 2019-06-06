@@ -6,4 +6,6 @@ id: hr_manager
 label: 'HR Manager'
 weight: 5
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create lr_workflow workflow_transition'
+  - 'use lr_workflow transition phase_three'

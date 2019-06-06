@@ -6,4 +6,6 @@ id: employee
 label: Employee
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create lr_workflow workflow_transition'
+  - 'use lr_workflow transition phase_4'

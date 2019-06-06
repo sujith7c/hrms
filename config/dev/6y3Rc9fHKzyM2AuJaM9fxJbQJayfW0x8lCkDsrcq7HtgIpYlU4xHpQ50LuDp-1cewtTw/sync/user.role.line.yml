@@ -6,4 +6,7 @@ id: line
 label: 'Line Manager'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create lr_workflow workflow_transition'
+  - 'use lr_workflow transition phase_one'
+  - 'use lr_workflow transition phase_two'
