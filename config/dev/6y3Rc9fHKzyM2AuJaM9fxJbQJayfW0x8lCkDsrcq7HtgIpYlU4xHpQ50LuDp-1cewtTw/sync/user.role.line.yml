@@ -1,0 +1,9 @@
+uuid: e9b2735a-938d-45ab-9f11-00871a40e756
+langcode: en
+status: true
+dependencies: {  }
+id: line
+label: 'Line Manager'
+weight: 4
+is_admin: null
+permissions: {  }

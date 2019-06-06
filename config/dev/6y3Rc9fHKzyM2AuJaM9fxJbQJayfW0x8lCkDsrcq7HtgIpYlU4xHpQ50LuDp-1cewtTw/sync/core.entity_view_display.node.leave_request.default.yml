@@ -20,7 +20,7 @@ bundle: leave_request
 mode: default
 content:
   field_first_date_of_leave:
-    weight: 102
+    weight: 2
     label: above
     settings:
       format_type: medium
@@ -29,7 +29,7 @@ content:
     type: datetime_default
     region: content
   field_last_date_of_leave:
-    weight: 103
+    weight: 3
     label: above
     settings:
       format_type: medium
@@ -38,7 +38,7 @@ content:
     type: datetime_default
     region: content
   field_leave_address_on_leave:
-    weight: 106
+    weight: 6
     label: above
     settings:
       link_to_entity: false
@@ -46,31 +46,30 @@ content:
     type: string
     region: content
   field_leave_payment_opt:
-    weight: 104
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_leave_phone_number:
-    weight: 105
+    weight: 5
     label: above
     settings:
-      thousand_separator: ''
-      prefix_suffix: true
+      link_to_entity: false
     third_party_settings: {  }
-    type: number_integer
+    type: string
     region: content
   field_leave_req_type_of_leave:
-    weight: 101
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

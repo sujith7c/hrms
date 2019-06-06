@@ -1,0 +1,74 @@
+uuid: 4c6d8d8d-f358-4bc8-825e-a73e3dc1a406
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leave_request
+  module:
+    - content_moderation
+id: leave_application_work_flow
+label: 'Leave Application approval work flow'
+type: content_moderation
+type_settings:
+  states:
+    assessment:
+      published: false
+      default_revision: false
+      label: Assessment
+      weight: -2
+    completed:
+      published: false
+      default_revision: false
+      label: Completed
+      weight: 1
+    draft:
+      published: false
+      default_revision: false
+      label: Applied
+      weight: -3
+    granted:
+      published: false
+      default_revision: false
+      label: Granted
+      weight: -1
+    published:
+      published: true
+      default_revision: true
+      label: Approved
+      weight: 0
+  transitions:
+    assessment:
+      label: Assessment
+      from:
+        - draft
+      to: assessment
+      weight: -2
+    completed:
+      label: Completed
+      from:
+        - published
+      to: completed
+      weight: 1
+    create_new_draft:
+      label: Applied
+      to: draft
+      weight: -3
+      from:
+        - draft
+    granted:
+      label: Granted
+      from:
+        - assessment
+      to: granted
+      weight: -1
+    publish:
+      label: Approved
+      to: published
+      weight: 0
+      from:
+        - draft
+        - published
+  entity_types:
+    node:
+      - leave_request
+  default_moderation_state: draft

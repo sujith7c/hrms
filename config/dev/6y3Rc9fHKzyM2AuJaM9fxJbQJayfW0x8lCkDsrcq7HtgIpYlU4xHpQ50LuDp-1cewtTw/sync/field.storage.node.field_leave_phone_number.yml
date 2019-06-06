@@ -1,4 +1,4 @@
-uuid: cb974da2-49a9-4c0d-99fe-2052f15159fb
+uuid: cbbda47c-2bb3-4140-9c07-1be1e7346e22
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,11 @@ dependencies:
 id: node.field_leave_phone_number
 field_name: field_leave_phone_number
 entity_type: node
-type: integer
+type: string
 settings:
-  unsigned: false
-  size: normal
+  max_length: 150
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1
