@@ -1,0 +1,9 @@
+name: HRMS
+description: Human Resource Management system
+type: module
+core: 8.x
+package: Custom
+dependencies: 
+  - drupal :workflows
+  - drupal :views
+
