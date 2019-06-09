@@ -1,0 +1,9 @@
+hrms.hrms:
+    path: '/myapplications'
+    defaults:
+      _controller: 
+        '\Drupal\hrms\Controller\HrmsController::myapplications'
+      _title: 'My Applications'
+    requirements:
+      _permission:  'access content'
+
